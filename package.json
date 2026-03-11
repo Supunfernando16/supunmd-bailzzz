@@ -1,0 +1,97 @@
+{
+  "name": "supunmd-bail",
+  "type": "module",
+  "version": "2.2.3",
+    "description": "WhatsApp API Modification By Supun Fernando",
+    "keywords": [
+        "whatsapp",
+        "baileys",
+        "whatsapp-web",
+        "whatsapp-chat",
+        "whatsapp-group",
+        "whatsapp-bot",
+        "automation",
+        "whatsapp-api", 
+        "baileys-mod",
+        "supun-md",
+        "supun-fernando",
+        "dtz",
+        "dark-shadow-modz",
+        "ds-modz",
+        "wa-bot"
+    ],
+    "homepage": "https://www.npmjs.com/mr-supun-fernando",
+    "repository": {
+        "url": "https://www.npmjs.com/package/supunmd-bail"
+    },
+  "license": "MIT",
+  "author": "Supun Fernando",
+  "main": "./index.cjs",
+  "module": "./lib/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.cjs"
+      },
+      "default": "./lib/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "lib/**/*",
+    "WAProto/**/*",
+    "engine-requirements.js",
+    "index.cjs",
+    "index.d.ts"
+  ],
+  "scripts": {},
+  "dependencies": {
+    "@cacheable/node-cache": "^1.4.0",
+    "@hapi/boom": "^9.1.3",
+    "async-mutex": "^0.5.0",
+    "cache-manager": "^5.7.6",
+    "libsignal": "git+https://github.com/whiskeysockets/libsignal-node",
+    "lru-cache": "^11.1.0",
+    "music-metadata": "^11.7.0",
+    "p-queue": "^9.0.0",
+    "pino": "^9.6",
+    "protobufjs": "^7.2.4",
+    "whatsapp-rust-bridge": "0.5.2",
+    "ws": "^8.13.0",
+    "chalk": "^5.3.0",
+    "fflate": "^0.8.2"
+  },
+  "peerDependencies": {
+    "audio-decode": "^2.1.3",
+    "jimp": "^1.6.0",
+    "link-preview-js": "^3.0.0",
+    "sharp": "*"
+  },
+  "peerDependenciesMeta": {
+    "audio-decode": {
+      "optional": true
+    },
+    "jimp": {
+      "optional": true
+    },
+    "link-preview-js": {
+      "optional": true
+    }
+  },
+  "packageManager": "yarn@4.9.2",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
